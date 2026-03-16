@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        // Crear objetos Libro
+        Libro libro1 = new Libro("Cien años de soledad", "Gabriel García Márquez", "978-0307474728", 1967);
+        Libro libro2 = new Libro("100 años de soledad (Edición Especial)", "G. García Márquez", "978-0307474728", 2010);
+        Libro libro3 = new Libro("Don Quijote de la Mancha", "Miguel de Cervantes", "978-8424116286", 1605);
+
+        // 1. Imprimir usando toString()
+        System.out.println("--- Lista de Libros ---");
+        System.out.println(libro1);
+        System.out.println(libro2);
+        System.out.println(libro3);
+
+        // 2. Comparar libros con el mismo ISBN
+        System.out.println("\n--- Comparación por ISBN ---");
+        System.out.println("¿Libro 1 es igual a Libro 2? (Mismo ISBN): " + libro1.equals(libro2));
+
+        // 3. Comparar libros con ISBN diferentes
+        System.out.println("¿Libro 1 es igual a Libro 3? (Distinto ISBN): " + libro1.equals(libro3));
+    }
+}
