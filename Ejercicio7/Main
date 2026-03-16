@@ -1,0 +1,20 @@
+public class Main {
+    public static void main(String[] args) {
+        // Creación de objetos
+        Coche miCoche = new Coche("Toyota", "Corolla", 2022, 4);
+        Motocicleta miMoto = new Motocicleta("Harley-Davidson", "Iron 883", 2021, false);
+        Camion miCamion = new Camion("Volvo", "FH16", 2023, 25.5);
+
+        // Demostración de mostrarDetalles()
+        System.out.println("--- Detalles de los Vehículos ---");
+        miCoche.mostrarDetalles();
+        miMoto.mostrarDetalles();
+        miCamion.mostrarDetalles();
+
+        System.out.println("\n--- Acciones de Movimiento ---");
+        // Demostración de mover() (Extensión)
+        miCoche.mover();
+        miMoto.mover();
+        miCamion.mover();
+    }
+}
