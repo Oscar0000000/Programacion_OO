@@ -1,0 +1,41 @@
+// Clase Coche
+class Coche extends Vehiculo {
+    int numPuertas;
+
+    public Coche(String marca, String modelo, int anio, int numPuertas) {
+        super(marca, modelo, anio);
+        this.numPuertas = numPuertas;
+    }
+
+    @Override
+    public void mostrarDetalles() {
+        super.mostrarDetalles();
+        System.out.println(", Puertas: " + numPuertas);
+    }
+
+    @Override
+    public void mover() {
+        System.out.println("El coche está circulando por la carretera.");
+    }
+}
+
+// Clase Motocicleta
+class Motocicleta extends Vehiculo {
+    boolean tieneSidecar;
+
+    public Motocicleta(String marca, String modelo, int anio, boolean tieneSidecar) {
+        super(marca, modelo, anio);
+        this.tieneSidecar = tieneSidecar;
+    }
+
+    @Override
+    public void mostrarDetalles() {
+        super.mostrarDetalles();
+        System.out.println(", ¿Tiene sidecar?: " + (tieneSidecar ? "Sí" : "No"));
+    }
+
+    @Override
+    public void mover() {
+        System.out.println("La motocicleta zigzaguea por el tráfico.");
+    }
+}
