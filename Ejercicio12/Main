@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        // Creamos instancias de los hijos
+        Animal miPerro = new Perro("Rex", 5);
+        Animal miGato = new Gato("Luna", 3);
+        Animal miPajaro = new Pajaro("Pipo", 1);
+
+        // Los metemos en una lista para demostrar el polimorfismo
+        Animal[] animales = {miPerro, miGato, miPajaro};
+
+        for (Animal a : animales) {
+            a.mostrarInformacion();
+            a.hacerSonido();
+            System.out.println(a.moverse());
+            System.out.println("---------------------------");
+        }
+    }
+}
