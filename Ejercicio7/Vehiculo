@@ -1,0 +1,20 @@
+public class Vehiculo {
+    String marca;
+    String modelo;
+    int anio;
+
+    public Vehiculo(String marca, String modelo, int anio) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+    }
+
+    public void mostrarDetalles() {
+        System.out.print("Marca: " + marca + ", Modelo: " + modelo + ", Año: " + anio);
+    }
+
+    // Método para la extensión opcional
+    public void mover() {
+        System.out.println("El vehículo se está moviendo.");
+    }
+}
