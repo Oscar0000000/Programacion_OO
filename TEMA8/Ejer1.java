@@ -15,17 +15,17 @@ public class Ejer1 {
 		        lista = new ArrayList<>();
 		        System.out.println("2. Lista vacía: " + lista);
 
-		        // 3. Añadir 3 nombres (simulando Personas para hacerlo simple)
+		        // 3. Añadir 3 nombres 
 		        lista.add("Fran");
 		        lista.add("Ana");
 		        lista.add("Luis");
 		        System.out.println("3. Lista con 3: " + lista);
 
-		        // 4. Imprimir la última persona (posicion: size - 1)
+		        // 4. Imprimir la última persona 
 		        String ultima = lista.get(lista.size() - 1);
 		        System.out.println("4. Última: " + ultima);
 
-		        // 5. Modificar el nombre de la primera (índice 0)
+		        // 5. Modificar el nombre de la primera 
 		        lista.set(0, "Francisco");
 		        System.out.println("5. Tras modificar primera: " + lista);
 
@@ -44,7 +44,7 @@ public class Ejer1 {
 		        lista.add(nueva);
 		        System.out.println("8. ¿Está Berta?: " + lista.contains(nueva));
 
-		        // 9. Vaciar la lista (sin usar clear) y confirmar
+		        // 9. Vaciar la lista 
 		        while (!lista.isEmpty()) {
 		            lista.remove(0); // Borra el primero hasta que no quede nada
 		        }
