@@ -26,7 +26,7 @@ public class ejercicio8 {
 		}
 		
 		
-		// Haz lo mismo con nombres de alumnos
+		// lo mismo con nombres de alumnos
 		
 		Set<String> alumnos = new TreeSet<>();
 
