@@ -40,8 +40,5 @@ public class Coche implements Serializable {
         this.color = color;
     }
 
-    @Override
-    public String toString() {
-        return "Coche [id=" + id + ", color=" + color + "]";
     }
 }
